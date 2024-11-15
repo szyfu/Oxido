@@ -13,28 +13,29 @@ Własnoręcznie wprowadzając tekst.
 Generując szczegółowy opis i podpis na podstawie własnych wskazówek.
 Zapis i zakończenie – Po zakończeniu edycji użytkownik może zapisać wygenerowany artykuł HTML do pliku.
 Instrukcja uruchomienia aplikacji:
+
 1. Zainstalowanie wymaganych bibliotek:
 
 Aby uruchomić aplikację, należy mieć zainstalowaną bibliotekę openai, której używamy do generowania treści za pomocą modelu GPT-4.
-
 Uruchom poniższą komendę, aby zainstalować wymagane biblioteki:
-
 pip install openai
+
 2. Wstawienie własnego klucza API:
 
-Zarejestruj się na platformie OpenAI i uzyskaj swój klucz API.
 Zamień wartość zmiennej API_KEY w kodzie na swój klucz API. Należy to zrobić w miejscu, gdzie klucz jest przypisany:
 API_KEY = "Twój_klucz_API"
 openai.api_key = API_KEY
+
 3. Przygotowanie pliku z artykułem:
 
 Przygotuj plik tekstowy o nazwie projekt.txt, który będzie zawierał treść artykułu. Aplikacja wczytuje ten plik i na podstawie jego zawartości generuje HTML.
 Upewnij się, że plik projekt.txt jest w tym samym folderze, co skrypt Pythona.
+
 4. Uruchomienie aplikacji:
 
 Aby uruchomić aplikację, wystarczy wykonać poniższą komendę w terminalu, w folderze z plikiem skryptu:
-python nazwa_skryptu.py
-Zastąp nazwa_skryptu.py nazwą pliku, w którym zapisano kod.
+python projekt.py
+
 
 5. Interakcja z aplikacją:
 
@@ -47,13 +48,9 @@ Usunięcie obrazka – Usunięcie wskazanego obrazka na podstawie numeru.
 Zamiana miejscami obrazków – Zamiana dwóch obrazków na podstawie numerów.
 Wygenerowanie nowego opisu i podpisu do obrazka – Użytkownik może wybrać, jak chce wygenerować nowe opisy (automatycznie, ręcznie lub na podstawie wskazówek).
 Zapisanie artykułu i zakończenie – Zapisanie wygenerowanego HTML do pliku i zakończenie pracy z aplikacją.
+
 6. Przykład działania:
 
-Uruchom aplikację.
-Podaj liczbę obrazków, które mają zostać dodane do artykułu.
-Wygenerowany artykuł HTML z obrazkami zostanie wyświetlony.
-Skorzystaj z menu, aby wykonać operacje na obrazkach (usuń, zamień, regeneruj opisy).
-Po zakończeniu możesz zapisać artykuł w pliku generated_article.html.
 Przykład działania aplikacji:
 Krok 1: Wprowadź liczbę obrazków:
 
@@ -78,5 +75,5 @@ Wybierz sposób generowania nowego opisu i podpisu:
 Wpisz '1', '2' lub '3' i naciśnij Enter: 1
 Krok 4: Zapisz plik HTML:
 
-Plik zapisany jako 'generated_article.html'.
+Plik zapisany jako 'artykul.html'.
 Aplikacja zakończy działanie po zapisaniu pliku.
